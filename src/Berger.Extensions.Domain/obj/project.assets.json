@@ -3271,6 +3271,7 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/berger-erp-presentation/_packaging/brg-erp-presentation/nuget/v3/index.json": {},
         "https://pkgs.dev.azure.com/berger-erp/_packaging/brg-erp-modules/nuget/v3/index.json": {}
       },
       "frameworks": {
