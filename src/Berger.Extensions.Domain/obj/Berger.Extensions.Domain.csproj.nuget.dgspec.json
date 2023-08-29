@@ -44,7 +44,7 @@
           "dependencies": {
             "Berger.Extensions.Repository": {
               "target": "Package",
-              "version": "[1.0.0.41, )"
+              "version": "[1.0.0.43, )"
             }
           },
           "imports": [
