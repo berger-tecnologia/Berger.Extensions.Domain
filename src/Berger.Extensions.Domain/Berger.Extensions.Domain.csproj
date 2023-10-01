@@ -6,6 +6,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Berger.Extensions.Repository" Version="1.0.0.43" />
+		<PackageReference Include="Berger.Extensions.Repository" Version="1.0.0.44" />
 	</ItemGroup>
 </Project>
