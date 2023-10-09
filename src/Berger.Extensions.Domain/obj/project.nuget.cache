@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ifxTUikhqnn2/OrFi1lGs7i+PjLyUVvCEGuyYioFWXOXaZhcrvkeF2p5TTcSCLR3M2Vx5XCZa9sr51hHqwz4Vw==",
+  "dgSpecHash": "FCHs3uRwbPjx4rXPr6bMwagzeinjp73x5pIJaD2yg9//xHIe61rIhvaoDFULCiJjzcR4nvqXDNRSNRUWNVZaMQ==",
   "success": true,
   "projectFilePath": "D:\\Development\\berger-open-source\\Berger.Extensions.Domain\\src\\Berger.Extensions.Domain\\Berger.Extensions.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rafael Cronemberger\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Rafael Cronemberger\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
-    "C:\\Users\\Rafael Cronemberger\\.nuget\\packages\\berger.extensions.repository\\1.0.0.44\\berger.extensions.repository.1.0.0.44.nupkg.sha512",
     "C:\\Users\\Rafael Cronemberger\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Rafael Cronemberger\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Rafael Cronemberger\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",
