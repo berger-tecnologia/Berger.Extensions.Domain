@@ -5,7 +5,15 @@
 		<Nullable>disable</Nullable>
 	</PropertyGroup>
 
-	<ItemGroup>
-		<PackageReference Include="Berger.Extensions.Repository" Version="1.0.0.44" />
+	<PropertyGroup>
+		<UseProjectReference>true</UseProjectReference>
+	</PropertyGroup>
+
+	<ItemGroup Condition="'$(UseProjectReference)' == 'true'">
+		<ProjectReference Include="..\..\..\Berger.Extensions.Repository\src\Berger.Extensions.Repository\Berger.Extensions.Repository.csproj" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(UseProjectReference)' != 'true'">
+		<PackageReference Include="Berger.Extensions.Repository" Version="*" />
 	</ItemGroup>
 </Project>

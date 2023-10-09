@@ -46,20 +46,6 @@
           }
         }
       },
-      "Berger.Extensions.Repository/1.0.0.44": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.11",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.11",
-          "Newtonsoft.Json": "13.0.3"
-        },
-        "compile": {
-          "lib/net7.0/Berger.Extensions.Repository.dll": {}
-        },
-        "runtime": {
-          "lib/net7.0/Berger.Extensions.Repository.dll": {}
-        }
-      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
@@ -987,6 +973,21 @@
             "rid": "win"
           }
         }
+      },
+      "Berger.Extensions.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.11",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.11",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "bin/placeholder/Berger.Extensions.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Berger.Extensions.Repository.dll": {}
+        }
       }
     }
   },
@@ -1027,18 +1028,6 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
-      ]
-    },
-    "Berger.Extensions.Repository/1.0.0.44": {
-      "sha512": "AjGVRw9UKX/WfNS6BV9gFKn/8MQbSScVJVd5xTH7cdKQU3dYvS+I+gE/CBLpO4nvpmsbmlmuqU8c5H9yhKVMZw==",
-      "type": "package",
-      "path": "berger.extensions.repository/1.0.0.44",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "berger.extensions.repository.1.0.0.44.nupkg.sha512",
-        "berger.extensions.repository.nuspec",
-        "lib/net7.0/Berger.Extensions.Repository.dll"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -2678,11 +2667,16 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Berger.Extensions.Repository/1.0.0": {
+      "type": "project",
+      "path": "../../../Berger.Extensions.Repository/src/Berger.Extensions.Repository/Berger.Extensions.Repository.csproj",
+      "msbuildProject": "../../../Berger.Extensions.Repository/src/Berger.Extensions.Repository/Berger.Extensions.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Berger.Extensions.Repository >= 1.0.0.44"
+      "Berger.Extensions.Repository >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2713,7 +2707,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Development\\berger-open-source\\Berger.Extensions.Repository\\src\\Berger.Extensions.Repository\\Berger.Extensions.Repository.csproj": {
+              "projectPath": "D:\\Development\\berger-open-source\\Berger.Extensions.Repository\\src\\Berger.Extensions.Repository\\Berger.Extensions.Repository.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -2725,12 +2723,6 @@
     "frameworks": {
       "net7.0": {
         "targetAlias": "net7.0",
-        "dependencies": {
-          "Berger.Extensions.Repository": {
-            "target": "Package",
-            "version": "[1.0.0.44, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",

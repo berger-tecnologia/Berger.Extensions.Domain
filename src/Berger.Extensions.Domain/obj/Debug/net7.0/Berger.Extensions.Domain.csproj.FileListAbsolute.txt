@@ -25,11 +25,14 @@ E:\Desenvolvimento\berger-tecnologia\extensions.berger.com.br\src\Berger.Extensi
 D:\Development\berger-open-source\Berger.Extensions.Domain\src\Berger.Extensions.Domain\bin\Debug\net7.0\Berger.Extensions.Domain.deps.json
 D:\Development\berger-open-source\Berger.Extensions.Domain\src\Berger.Extensions.Domain\bin\Debug\net7.0\Berger.Extensions.Domain.dll
 D:\Development\berger-open-source\Berger.Extensions.Domain\src\Berger.Extensions.Domain\bin\Debug\net7.0\Berger.Extensions.Domain.pdb
+D:\Development\berger-open-source\Berger.Extensions.Domain\src\Berger.Extensions.Domain\bin\Debug\net7.0\Berger.Extensions.Repository.dll
+D:\Development\berger-open-source\Berger.Extensions.Domain\src\Berger.Extensions.Domain\bin\Debug\net7.0\Berger.Extensions.Repository.pdb
 D:\Development\berger-open-source\Berger.Extensions.Domain\src\Berger.Extensions.Domain\obj\Debug\net7.0\Berger.Extensions.Domain.csproj.AssemblyReference.cache
 D:\Development\berger-open-source\Berger.Extensions.Domain\src\Berger.Extensions.Domain\obj\Debug\net7.0\Berger.Extensions.Domain.GeneratedMSBuildEditorConfig.editorconfig
 D:\Development\berger-open-source\Berger.Extensions.Domain\src\Berger.Extensions.Domain\obj\Debug\net7.0\Berger.Extensions.Domain.AssemblyInfoInputs.cache
 D:\Development\berger-open-source\Berger.Extensions.Domain\src\Berger.Extensions.Domain\obj\Debug\net7.0\Berger.Extensions.Domain.AssemblyInfo.cs
 D:\Development\berger-open-source\Berger.Extensions.Domain\src\Berger.Extensions.Domain\obj\Debug\net7.0\Berger.Extensions.Domain.csproj.CoreCompileInputs.cache
+D:\Development\berger-open-source\Berger.Extensions.Domain\src\Berger.Extensions.Domain\obj\Debug\net7.0\Berger.Extensions.Domain.csproj.CopyComplete
 D:\Development\berger-open-source\Berger.Extensions.Domain\src\Berger.Extensions.Domain\obj\Debug\net7.0\Berger.Extensions.Domain.dll
 D:\Development\berger-open-source\Berger.Extensions.Domain\src\Berger.Extensions.Domain\obj\Debug\net7.0\refint\Berger.Extensions.Domain.dll
 D:\Development\berger-open-source\Berger.Extensions.Domain\src\Berger.Extensions.Domain\obj\Debug\net7.0\Berger.Extensions.Domain.pdb

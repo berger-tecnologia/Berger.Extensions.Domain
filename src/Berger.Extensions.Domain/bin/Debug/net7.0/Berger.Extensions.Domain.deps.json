@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "Berger.Extensions.Domain/1.0.0": {
         "dependencies": {
-          "Berger.Extensions.Repository": "1.0.0.44"
+          "Berger.Extensions.Repository": "1.0.0"
         },
         "runtime": {
           "Berger.Extensions.Domain.dll": {}
@@ -45,19 +45,6 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.7.0.0",
             "fileVersion": "1.700.22.46903"
-          }
-        }
-      },
-      "Berger.Extensions.Repository/1.0.0.44": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.11",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.11",
-          "Newtonsoft.Json": "13.0.3"
-        },
-        "runtime": {
-          "lib/net7.0/Berger.Extensions.Repository.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -570,6 +557,16 @@
             "fileVersion": "6.0.21.52210"
           }
         }
+      },
+      "Berger.Extensions.Repository/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.11",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.11",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "Berger.Extensions.Repository.dll": {}
+        }
       }
     }
   },
@@ -592,13 +589,6 @@
       "sha512": "sha512-eHEiCO/8+MfNc9nH5dVew/+FvxdaGrkRL4OMNwIz0W79+wtJyEoeRlXJ3SrXhoy9XR58geBYKmzMR83VO7bcAw==",
       "path": "azure.identity/1.7.0",
       "hashPath": "azure.identity.1.7.0.nupkg.sha512"
-    },
-    "Berger.Extensions.Repository/1.0.0.44": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-AjGVRw9UKX/WfNS6BV9gFKn/8MQbSScVJVd5xTH7cdKQU3dYvS+I+gE/CBLpO4nvpmsbmlmuqU8c5H9yhKVMZw==",
-      "path": "berger.extensions.repository/1.0.0.44",
-      "hashPath": "berger.extensions.repository.1.0.0.44.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",
@@ -970,6 +960,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "Berger.Extensions.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

@@ -29,6 +29,67 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Development\\berger-open-source\\Berger.Extensions.Repository\\src\\Berger.Extensions.Repository\\Berger.Extensions.Repository.csproj": {
+                "projectPath": "D:\\Development\\berger-open-source\\Berger.Extensions.Repository\\src\\Berger.Extensions.Repository\\Berger.Extensions.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Development\\berger-open-source\\Berger.Extensions.Repository\\src\\Berger.Extensions.Repository\\Berger.Extensions.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Development\\berger-open-source\\Berger.Extensions.Repository\\src\\Berger.Extensions.Repository\\Berger.Extensions.Repository.csproj",
+        "projectName": "Berger.Extensions.Repository",
+        "projectPath": "D:\\Development\\berger-open-source\\Berger.Extensions.Repository\\src\\Berger.Extensions.Repository\\Berger.Extensions.Repository.csproj",
+        "packagesPath": "C:\\Users\\Rafael Cronemberger\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\berger-open-source\\Berger.Extensions.Repository\\src\\Berger.Extensions.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Rafael Cronemberger\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/berger-erp-presentation/_packaging/brg-erp-presentation/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/berger-erp/_packaging/brg-erp-modules/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -42,9 +103,17 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Berger.Extensions.Repository": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[1.0.0.44, )"
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
