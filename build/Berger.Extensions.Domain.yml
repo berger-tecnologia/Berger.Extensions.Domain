@@ -45,7 +45,7 @@ jobs:
     displayName: dotnet pack
     inputs:
       command: pack
-      arguments: '-p:UseProjectReference=false'
+      arguments: '-p:UseProjectReference=true'
       versioningScheme: byBuildNumber
 
   - task: NuGetCommand@2
