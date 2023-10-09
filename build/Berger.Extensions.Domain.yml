@@ -33,6 +33,7 @@ jobs:
     inputs:
       command: restore
       projects: '**/*.csproj'
+      arguments: '-p:UseProjectReference=false'
 
   - task: DotNetCoreCLI@2
     displayName: dotnet build
@@ -44,6 +45,7 @@ jobs:
     displayName: dotnet pack
     inputs:
       command: pack
+      arguments: '-p:UseProjectReference=false'
       versioningScheme: byBuildNumber
 
   - task: NuGetCommand@2
