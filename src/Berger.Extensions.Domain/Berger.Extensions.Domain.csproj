@@ -5,15 +5,11 @@
 		<TargetFramework>net7.0</TargetFramework>
 	</PropertyGroup>
 
-	<PropertyGroup>
-		<UseProjectReference>true</UseProjectReference>
-	</PropertyGroup>
-
-	<ItemGroup Condition="'$(UseProjectReference)' == 'true'">
+	<ItemGroup Condition="'$(Configuration)' == 'Debug'">
 		<ProjectReference Include="..\..\..\Berger.Extensions.Repository\src\Berger.Extensions.Repository\Berger.Extensions.Repository.csproj" />
 	</ItemGroup>
 
-	<ItemGroup Condition="'$(UseProjectReference)' != 'true'">
-		<PackageReference Include="Berger.Extensions.Repository" Version="1.0.0.45" />
+	<ItemGroup Condition="'$(Configuration)' == 'Release'">
+		<PackageReference Include="Berger.Extensions.Repository" Version="*" />
 	</ItemGroup>
 </Project>

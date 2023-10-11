@@ -33,20 +33,18 @@ jobs:
     inputs:
       command: restore
       projects: '**/*.csproj'
-      arguments: '/property:UseProjectReference=false'
       includeNuGetOrg: true
 
   - task: DotNetCoreCLI@2
     displayName: 'dotnet build'
     inputs:
       projects: '**/*.csproj'
-      arguments: '--configuration $(buildConfiguration) /property:UseProjectReference=false'
+      arguments: '--configuration $(buildConfiguration)'
 
   - task: DotNetCoreCLI@2
     displayName: dotnet pack
     inputs:
       command: pack
-      arguments: '/property:UseProjectReference=false'
       versioningScheme: byBuildNumber
 
   - task: NuGetCommand@2
