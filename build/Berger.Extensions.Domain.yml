@@ -34,6 +34,7 @@ jobs:
       command: restore
       projects: '**/*.csproj'
       arguments: '/property:UseProjectReference=false'
+      includeNuGetOrg: true
 
   - task: DotNetCoreCLI@2
     displayName: 'dotnet build'
