@@ -4,9 +4,6 @@ trigger:
     - main
 name: 1.0.0$(Rev:.r)
 
-variables:
-  buildConfiguration: 'Release'
-
 resources:
   repositories:
   - repository: self
@@ -14,7 +11,7 @@ resources:
     ref: refs/heads/dev
 
 jobs:
-- job: Job_1
+- job: 'nuget'
   displayName: Berger.Extensions.Domain-Agent
   pool:
     vmImage: windows-latest
@@ -24,7 +21,6 @@ jobs:
     fetchTags: false
 
   - task: UseDotNet@2
-    displayName: dotnet core sdk 7.x use
     inputs:
       version: 7.x
 
