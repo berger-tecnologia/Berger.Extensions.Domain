@@ -36,7 +36,7 @@ jobs:
       arguments: '-p:UseProjectReference=false'
 
   - task: DotNetCoreCLI@2
-    displayName: dotnet build
+    displayName: 'dotnet build -v:d -p:UseProjectReference=false'
     inputs:
       projects: '**/*.csproj'
       arguments: '--configuration $(buildConfiguration) -p:UseProjectReference=false'
