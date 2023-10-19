@@ -5,11 +5,11 @@
 		<TargetFramework>net7.0</TargetFramework>
 	</PropertyGroup>
 
-	<ItemGroup Condition="'$(Configuration)' == 'Debug'">
+	<ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
 		<ProjectReference Include="..\..\..\Berger.Extensions.Repository\src\Berger.Extensions.Repository\Berger.Extensions.Repository.csproj" />
 	</ItemGroup>
 
-	<ItemGroup Condition="'$(Configuration)' == 'Release'">
+	<ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
 		<PackageReference Include="Berger.Extensions.Repository" Version="*" />
 	</ItemGroup>
 </Project>
