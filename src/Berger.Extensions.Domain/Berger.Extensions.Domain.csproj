@@ -10,6 +10,6 @@
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-		<PackageReference Include="Berger.Extensions.Repository" Version="*" />
+		<PackageReference Include="Berger.Extensions.Repository" Version="1.0.0.47" />
 	</ItemGroup>
 </Project>
