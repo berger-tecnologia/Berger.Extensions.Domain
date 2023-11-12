@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Berger.Extensions.Abstractions;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Berger.Extensions.Domain
 {
@@ -6,7 +7,7 @@ namespace Berger.Extensions.Domain
     {
         public static void ConfigureBaseService(this IServiceCollection services)
         {
-            services.AddScoped(typeof(IBaseService<>), typeof(BaseService<>));
+            services.AddScoped(typeof(IRepository<>), typeof(BaseService<>));
         }
     }
 }

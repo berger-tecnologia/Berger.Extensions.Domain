@@ -6,10 +6,15 @@
 	</PropertyGroup>
 
 	<ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-		<ProjectReference Include="$(berger-open-source)\Berger.Extensions.Repository\src\Berger.Extensions.Repository\Berger.Extensions.Repository.csproj" />
+		<ProjectReference Include="$(berger-open-source)\Berger.Extensions.Abstractions\src\Berger.Extensions.Abstractions\Berger.Extensions.Abstractions.csproj" />
 	</ItemGroup>
 
-	<ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-		<PackageReference Include="Berger.Extensions.Repository" Version="1.0.0.47" />
+	<ItemGroup>
+		<PackageReference Include="Berger.Extensions.Repository" Version="1.0.0.49" />
+		<PackageReference Include="Berger.Extensions.Abstractions" Version="1.0.0.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Interfaces\" />
 	</ItemGroup>
 </Project>
