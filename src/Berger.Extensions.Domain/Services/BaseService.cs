@@ -1,5 +1,5 @@
 ﻿using System.Linq.Expressions;
-using Berger.Extensions.Repository;
+using Berger.Extensions.Abstractions;
 
 namespace Berger.Extensions.Domain
 {
