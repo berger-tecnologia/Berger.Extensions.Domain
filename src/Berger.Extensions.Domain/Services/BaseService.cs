@@ -3,11 +3,30 @@ using Berger.Extensions.Abstractions;
 
 namespace Berger.Extensions.Domain
 {
-    public class BaseService<T> : BaseServiceGet<T>, IBaseService<T> where T : class
+    public class BaseService<T> : IBaseService<T> where T : BaseEntity
     {
         #region Constructors
-        public BaseService(IServiceProvider services) : base(services)
+        public BaseService(IServiceProvider services)
         {
+            _services = services;
+
+            _repository = (IRepository<T>)_services.GetService(typeof(IRepository<T>));
+        }
+        #endregion
+
+        #region Properties
+        public readonly IRepository<T> _repository;
+        public readonly IServiceProvider _services;
+        #endregion
+
+        #region Methods
+        public IQueryable<T> Get()
+        {
+            return _repository.Get();
+        }
+        public T GetById(Guid id)
+        {
+            return _repository.GetById(id);
         }
         #endregion
 
