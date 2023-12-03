@@ -28,9 +28,6 @@ namespace Berger.Extensions.Domain
         {
             return _repository.GetById(id);
         }
-        #endregion
-
-        #region Methods
         public T Add(T source)
         {
             return _repository.Add(source);
