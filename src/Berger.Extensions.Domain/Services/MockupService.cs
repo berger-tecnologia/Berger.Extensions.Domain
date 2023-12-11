@@ -3,9 +3,13 @@
 namespace Berger.Extensions.Domain
 {
     public class MockupService<T> where T : BaseEntity
-    {
-        #region Methods
-        public T Add(T source)
+	{
+		#region Methods
+		public IQueryable<T> Get(IEnumerable<Guid> ids)
+        {
+            throw new NotImplementedException();
+        }
+		public T Add(T source)
         {
             throw new NotImplementedException();
         }

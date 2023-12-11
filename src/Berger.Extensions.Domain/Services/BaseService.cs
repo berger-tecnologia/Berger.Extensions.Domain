@@ -3,7 +3,7 @@ using Berger.Extensions.Abstractions;
 
 namespace Berger.Extensions.Domain
 {
-    public class BaseService<T> : IBaseService<T> where T : BaseEntity
+	public class BaseService<T> : IBaseService<T> where T : BaseEntity
     {
         #region Constructors
         public BaseService(IServiceProvider services)
@@ -24,7 +24,12 @@ namespace Berger.Extensions.Domain
         {
             return _repository.Get();
         }
-        public T GetById(Guid id)
+
+		public IQueryable<T> Get(IEnumerable<Guid> ids)
+		{
+			return Get().Where(item => ids.Contains(item.Id));
+		}
+		public T GetById(Guid id)
         {
             return _repository.GetById(id);
         }
@@ -80,6 +85,6 @@ namespace Berger.Extensions.Domain
         {
             await _repository.UpdateAsync(field, value);
         }
-        #endregion
-    }
+		#endregion
+	}
 }
