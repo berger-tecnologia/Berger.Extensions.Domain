@@ -24,7 +24,6 @@ namespace Berger.Extensions.Domain
         {
             return _repository.Get();
         }
-
 		public IQueryable<T> Get(IEnumerable<Guid> ids)
 		{
 			return Get().Where(item => ids.Contains(item.Id));
