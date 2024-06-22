@@ -3,13 +3,8 @@ using Berger.Extensions.Abstractions;
 
 namespace Berger.Extensions.Domain
 {
-    public class BaseService<T> : IRepository<T> where T : class
+	public class BaseService<T> : IBaseService<T> where T : BaseEntity
     {
-        #region Properties
-        public readonly IRepository<T> _repository;
-        public readonly IServiceProvider _services;
-        #endregion
-
         #region Constructors
         public BaseService(IServiceProvider services)
         {
@@ -17,25 +12,49 @@ namespace Berger.Extensions.Domain
 
             _repository = (IRepository<T>)_services.GetService(typeof(IRepository<T>));
         }
-        public T Add(T element, bool detach = false)
+        #endregion
+
+        #region Properties
+        public readonly IRepository<T> _repository;
+        public readonly IServiceProvider _services;
+        #endregion
+
+        #region Methods
+        public IQueryable<T> Get()
         {
-            return _repository.Add(element);
+            return _repository.Get();
         }
-        public void Add(IQueryable<T> elements, bool detach = false)
+		public IQueryable<T> Get(IEnumerable<Guid> ids)
+		{
+			return Get().Where(item => ids.Contains(item.Id));
+		}
+		public T GetById(Guid id)
         {
-            _repository.Add(elements, detach);
+            return _repository.GetById(id);
         }
-        public async Task<T> AddAsync(T element)
+        public T Add(T source)
         {
-            return await _repository.AddAsync(element);
+            return _repository.Add(source);
+        }
+        public void Add(IQueryable<T> sources, bool detach = false)
+        {
+            _repository.Add(sources, detach);
+        }
+        public void Add(IQueryable<T> source)
+        {
+            _repository.Add(source);
+        }
+        public async Task<T> AddAsync(T source)
+        {
+            return await _repository.AddAsync(source);
         }
         public void Delete(Guid id)
         {
             _repository.Delete(id);
         }
-        public void Delete(IQueryable<T> elements)
+        public void Delete(IQueryable<T> sources)
         {
-            _repository.Delete(elements);
+            _repository.Delete(sources);
         }
         public async Task DeleteAsync(Guid id)
         {
@@ -45,34 +64,26 @@ namespace Berger.Extensions.Domain
         {
             return _repository.FirstOrDefault(expression);
         }
-        public IQueryable<T> Get()
-        {
-            return _repository.Get();
-        }
         public IQueryable<T> Get(Expression<Func<T, bool>> expression)
         {
             return _repository.Get(expression);
-        }
-        public T GetById(Guid id)
-        {
-            return _repository.GetById(id);
         }
         public IQueryable<T> GetIgnoreFilters()
         {
             return _repository.GetIgnoreFilters();
         }
-        public T Update(T element)
+        public T Update(T source)
         {
-            return _repository.Update(element);
+            return _repository.Update(source);
         }
-        public async Task<T> UpdateAsync(T element)
+        public async Task<T> UpdateAsync(T source)
         {
-            return await _repository.UpdateAsync(element);
+            return await _repository.UpdateAsync(source);
         }
         public async Task UpdateAsync(Func<T, string> field, string value)
         {
             await _repository.UpdateAsync(field, value);
         }
-        #endregion
-    }
+		#endregion
+	}
 }
